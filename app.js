@@ -18,8 +18,7 @@ var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
     
-//mongoose.connect("mongodb://localhost/yelp_camp_v5", { useMongoClient: true });
-mongoose.connect("mongodb://yezizheng:yzz12345!@ds125469.mlab.com:25469/imageshare", { useMongoClient: true });
+mongoose.connect(process.env.DATABASEURL, { useMongoClient: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
