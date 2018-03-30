@@ -18,7 +18,7 @@ var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
     
-mongoose.connect(process.env.DATABASEURL || "mongodb://localhost/Image_share_v1", { useMongoClient: true });
+mongoose.connect(process.env.DATABASEURL || "mongodb://localhost/Image_share_v21");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
