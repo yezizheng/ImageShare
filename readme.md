@@ -2,9 +2,9 @@
 
 ##Initial Setup
 * Add Landing Page
-* Add Campgrounds Page that lists all campgrounds
+* Add posts Page that lists all posts
 
-Each Campground has:
+Each post has:
    * Name
    * Image
 
@@ -12,28 +12,28 @@ Each Campground has:
 * Create our header and footer partials
 * Add in Bootstrap
 
-##Creating New Campgrounds
-* Setup new campground POST route
+##Creating New posts
+* Setup new post POST route
 * Add in body-parser
 * Setup route to show form
 * Add basic unstyled form
 
-##Style the campgrounds page
+##Style the posts page
 * Add a better header/title
-* Make campgrounds display in a grid
+* Make posts display in a grid
 
 ##Style the Navbar and Form
 * Add a navbar to all templates
-* Style the new campground form
+* Style the new post form
 
 ##Add Mongoose
 * Install and configure Mongoose
-* Setup campground model
-* Use campground model inside of our routes
+* Setup post model
+* Use post model inside of our routes
 
 ##Show Page
 * Review the RESTful routes we've seen so far
-* Add description to our campground model
+* Add description to our post model
 * Show db.collection.drop()
 * Add a show route/template
 
@@ -48,7 +48,7 @@ Each Campground has:
 
 ##Add the Comment model!
 * Make our errors go away!
-* Display comments on campground show page
+* Display comments on post show page
 
 ##Comment New/Create
 * Discuss nested routes
@@ -91,9 +91,9 @@ Each Campground has:
 * Associate users and comments
 * Save author's name to a comment automatically
 
-##Users + Campgrounds
-* Prevent an unauthenticated user from creating a campground
-* Save username+id to newly created campground
+##Users + posts
+* Prevent an unauthenticated user from creating a post
+* Save username+id to newly created post
 
 
 TODOS
@@ -107,7 +107,7 @@ TODOS
 * Random Background Landing Page
 * Refactor middleware
 * change styling in show template - comment delete/update
-* UPATE/DELETE CAMPGROUND
+* UPATE/DELETE post
 
 * BOOTSTRAP NAV COLLPASE JS
 * Flash Messages
@@ -117,7 +117,7 @@ TODOS
 * Random Background Landing Page
 * Refactor middleware
 * change styling in show template - comment delete/update
-* UPDATE/DELETE CAMPGROUND
+* UPDATE/DELETE post
 
 
 
@@ -131,10 +131,10 @@ NEW     /dogs/new  GET   Displays form to make a new dog
 CREATE  /dogs      POST  Add new dog to DB
 SHOW    /dogs/:id  GET   Shows info about one dog
 
-INDEX   /campgrounds
-NEW     /campgrounds/new
-CREATE  /campgrounds
-SHOW    /campgrounds/:id
+INDEX   /posts
+NEW     /posts/new
+CREATE  /posts
+SHOW    /posts/:id
 
-NEW     campgrounds/:id/comments/new    GET
-CREATE  campgrounds/:id/comments      POST
+NEW     posts/:id/comments/new    GET
+CREATE  posts/:id/comments      POST
